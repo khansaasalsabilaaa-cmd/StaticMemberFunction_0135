@@ -9,3 +9,11 @@ class buku {
             return this->judul; 
         }
 };
+
+int main() 
+{
+    buku bukunya;
+    cout << bukunya.setget("Matematika");
+
+    return 0;
+}
