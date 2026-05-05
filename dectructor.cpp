@@ -14,3 +14,23 @@ public:
     void isiData();
 };
 
+angka::angka(int i){
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+angka::~angka(){
+    cout << endl;
+    cetakData();
+    delete[] arr;
+    cout << "Alamat Array Sudah Dlepaskan" << endl;
+}
+
+void angka::cetakData()
+{
+    for (int i = 1; i <= panjang; i++)
+    {
+        cout << i << " = " << arr[i] << endl;
+    }
+}
+
