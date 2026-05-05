@@ -50,7 +50,7 @@ int main() {
     mhs3.printAll();
     mhs4.printAll();
 
-    cout << "akses dari luar objek = " << mahasiswa::getNim() << endl;
+    cout << "akses dari luar objek = " << Mahasiswa::getNim() << endl;
     system("pause");
 
     return 0;
